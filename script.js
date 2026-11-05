@@ -240,7 +240,7 @@ function renderWelcome() {
 
             <div class="intro-actions">
               <button id="startSurvey" class="primary-button" type="button">
-                ${hasDraft ? "Continuar pesquisa" : "Iniciar pesquisa"} <span>→</span>
+               ${hasDraft ? "Continuar pesquisa" : "Iniciar pesquisa"}
               </button>
               ${hasDraft ? `<button id="restartSurvey" class="secondary-button" type="button">Começar novamente</button>` : ""}
             </div>
@@ -436,7 +436,7 @@ function renderSurvey() {
         ${templateMarca()}
         <div class="survey-header-actions">
           <div class="confidential-badge"><span></span>Respostas confidenciais</div>
-          <button id="saveAndExit" class="exit-button" type="button">← <span>Salvar e sair</span></button>
+          <button id="saveAndExit" class="exit-button" type="button"><span>Salvar e sair</span></button>
         </div>
       </header>
 
@@ -471,10 +471,10 @@ function renderSurvey() {
 
           <div class="survey-navigation">
             <button id="previousButton" class="navigation-button previous" type="button">
-              ← ${state.currentSection === 0 ? "Voltar ao início" : "Etapa anterior"}
+             ${state.currentSection === 0 ? "Voltar ao início" : "Etapa anterior"}
             </button>
             <button class="navigation-button next" type="submit">
-              ${isLast ? "Concluir pesquisa" : "Próxima etapa"} →
+              ${isLast ? "Concluir pesquisa" : "Próxima etapa"} 
             </button>
           </div>
         </form>
